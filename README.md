@@ -9,7 +9,7 @@ Encode and decode your object keys so they're firebase friendly. Also supports d
 
 Encode:
 
-    var firebaseKeyEncode = requrie('firebase-key-encode');
+    var firebaseKeyEncode = require('firebase-key-encode');
 
     firebaseKeyEncode.encode('my.bad.key');
 
@@ -17,7 +17,7 @@ Encode:
 
 Decode:
 
-    var firebaseKeyEncode = requrie('firebase-key-encode');
+    var firebaseKeyEncode = require('firebase-key-encode');
 
     firebaseKeyEncode.encode('my%2Ebad%2Ekey');
 
@@ -25,7 +25,7 @@ Decode:
 
 Deep Encode:
 
-    var firebaseKeyEncode = requrie('firebase-key-encode');
+    var firebaseKeyEncode = require('firebase-key-encode');
 
     var badTree = {
         "pets": [
@@ -48,7 +48,7 @@ Deep Encode:
 
 Deep Decode:
 
-    var firebaseKeyEncode = requrie('firebase-key-encode');
+    var firebaseKeyEncode = require('firebase-key-encode');
 
     var badTree = {
         "pets": [
