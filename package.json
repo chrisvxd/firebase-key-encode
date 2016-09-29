@@ -1,6 +1,6 @@
 {
   "name": "firebase-key-encode",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Encode and decode your object keys so they're firebase friendly.",
   "main": "firebase-key-encode.js",
   "scripts": {
