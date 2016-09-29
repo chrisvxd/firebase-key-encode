@@ -43,7 +43,7 @@ module.exports = {
         var $this = this;
 
         var rebuiltTree = this.deepKeyReplace(encodedTree, function (key) {
-            return $this.decodeFirebaseKey(key);
+            return $this.decode(key);
         });
 
         return rebuiltTree;
@@ -52,7 +52,7 @@ module.exports = {
         var $this = this;
 
         var rebuiltTree = this.deepKeyReplace(decodedTree, function (key) {
-            return $this.encodeFirebaseKey(key);
+            return $this.encode(key);
         });
 
         return rebuiltTree;
