@@ -1,10 +1,10 @@
 var _ = require('lodash');
 
 module.exports = {
-    encodeFirebaseKey: function (decoded) {
+    encode: function (decoded) {
         return encodeURIComponent(decoded).replace(/\./g, '%2E');
     },
-    decodeFirebaseKey: function (encoded) {
+    decode: function (encoded) {
         return decodeURIComponent(encoded.replace('%2E', '.'));
     },
     // Replaces the key with `fn(key)` on each key in an object tree.
@@ -39,7 +39,7 @@ module.exports = {
 
         return rebuiltTree;
     },
-    decodeFirebaseKeysDeep: function (encodedTree) {
+    deepDecode: function (encodedTree) {
         var $this = this;
 
         var rebuiltTree = this.deepKeyReplace(encodedTree, function (key) {
@@ -48,7 +48,7 @@ module.exports = {
 
         return rebuiltTree;
     },
-    encodeFirebaseKeysDeep: function (decodedTree) {
+    deepEncode: function (decodedTree) {
         var $this = this;
 
         var rebuiltTree = this.deepKeyReplace(decodedTree, function (key) {
