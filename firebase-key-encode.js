@@ -1,3 +1,4 @@
+var _ = require('lodash');
 
 module.exports = {
     encodeFirebaseKey: function (decoded) {
@@ -9,7 +10,7 @@ module.exports = {
     // Replaces the key with `fn(key)` on each key in an object tree.
     // i.e. making all keys uppercase.
     deepKeyReplace: function (obj, fn) {
-        var rebuiltTree = lodash.clone(obj);
+        var rebuiltTree = _.clone(obj);
 
         function traverse(o, x, func) {
             if (typeof(o) === "object") {

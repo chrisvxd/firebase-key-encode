@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/chrisvxd/firebase-key-encode/issues"
   },
-  "homepage": "https://github.com/chrisvxd/firebase-key-encode#readme"
+  "homepage": "https://github.com/chrisvxd/firebase-key-encode#readme",
+  "dependencies": {
+    "lodash": "~4.16.2"
+  }
 }
