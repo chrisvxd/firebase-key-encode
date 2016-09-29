@@ -58,7 +58,7 @@ Deep Decode:
         "other%2Ekey": 5
     }
 
-    firebaseKeyEncode.deepEncode(badTree);
+    firebaseKeyEncode.deepDecode(badTree);
 
     // Output: {
     //    "pets": [
