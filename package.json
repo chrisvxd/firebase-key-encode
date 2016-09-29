@@ -1,0 +1,22 @@
+{
+  "name": "firebase-key-encode",
+  "version": "0.1.0",
+  "description": "Encode and decode your object keys so they're firebase friendly.",
+  "main": "firebase-key-encode.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chrisvxd/firebase-key-encode.git"
+  },
+  "keywords": [
+    "firebase",
+  ],
+  "author": "Chris Villa (github @chrisvxd)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chrisvxd/firebase-key-encode/issues"
+  },
+  "homepage": "https://github.com/chrisvxd/firebase-key-encode#readme"
+}
