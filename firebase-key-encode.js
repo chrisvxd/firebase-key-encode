@@ -1,9 +1,9 @@
 module.exports = {
     encode: function (decoded) {
-        return encodeURIComponent(decoded).replace(/\./g, '%2E');
+        return encodeURIComponent(decoded).replace(/\./g, '%2E').replace(/\*/g, '%2A');
     },
     decode: function (encoded) {
-        return decodeURIComponent(encoded.replace('%2E', '.'));
+        return decodeURIComponent(encoded).replace(/\%2E/g, '.').replace(/\%2A/g, '*');
     },
     // Replaces the key with `fn(key)` on each key in an object tree.
     // i.e. making all keys uppercase.
